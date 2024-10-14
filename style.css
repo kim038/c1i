@@ -3,7 +3,7 @@
 
 
 body {
-    background-color: #f3f3ee;
+    background-color: #eaeade;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -299,7 +299,29 @@ em {
     margin-left: 200px;
     margin-right: 200px;
     margin-top: 20px;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
+}
+
+
+.tree {
+    width: 500px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+.variant {
+    background-color: #d1c65f;
+}
+
+.va {
+    font-family: montserrat;
+    font-size: 40px;
+    font-weight: 500;
+    color: #1a2023;
+    margin-left: 200px;
+    margin-bottom: 50px;
+    padding-top: 70px;
+    padding-bottom: 500px;
 }
 
 @media screen and (max-width:800px) {
@@ -311,9 +333,19 @@ em {
     }
 
     .stalk {
-        font-size: 15px;
+        font-size: 20px;
         margin-left: 70px;
         margin-right: 70px;
+    }
+
+    .tree {
+        width: 300px;
+        margin-left: 50px
+    }
+
+    .va {
+        font-size: 20px;
+        margin-left: 50px;
     }
 }
 
@@ -329,6 +361,8 @@ em {
         margin-top: 30px;
     }
 }
+
+
 
 /* 
     @media screen and (max-width:600px) {
