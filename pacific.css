@@ -296,6 +296,11 @@ a {
     margin-top: 20px;
 }
 
+em {
+    color: gray;
+    font-weight: 500;
+}
+
 @media screen and (max-width:800px) {
     .box {
         font-size: 35px;
