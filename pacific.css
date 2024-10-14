@@ -294,6 +294,7 @@ a {
     margin-left: 200px;
     margin-right: 200px;
     margin-top: 20px;
+    margin-bottom: 70px;
 }
 
 em {
@@ -313,7 +314,6 @@ em {
         font-size: 15px;
         margin-left: 70px;
         margin-right: 70px;
-        margin-bottom: 70px;
     }
 }
 
