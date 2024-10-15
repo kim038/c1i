@@ -248,7 +248,7 @@ a {
 
 /*HERO*/
 .hero {
-    background-image: url(Marten.jpeg);
+    background-image: url(Images/AdobeStock_584384764.jpeg);
     height: 600px;
     background-size: cover;
     width: 100vw;
@@ -309,6 +309,7 @@ em {
     margin-bottom: 50px;
 }
 
+
 .variant {
     background-color: #d1c65f;
 }
@@ -339,8 +340,9 @@ em {
     }
 
     .tree {
-        width: 300px;
-        margin-left: 50px
+        width: 400px;
+        margin-left: 40px;
+        margin-right: 30px;
     }
 
     .va {
