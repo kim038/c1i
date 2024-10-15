@@ -118,7 +118,7 @@ header {
 
     /*HERO*/
     .hero {
-        background-image: url(Images/AdobeStock_163810433.jpeg);
+        background-image: url(AdobeStock_163810433.jpeg);
         height: 600px;
         background-size: cover;
         width: 100vw;
