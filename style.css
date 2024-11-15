@@ -3,7 +3,7 @@
 @import url("https://use.typekit.net/hxw4avg.css");
 
 body {
-    background-color: #eaeade;
+    background-color: #f4f5eb;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -119,9 +119,7 @@ header {
 
     /*HERO*/
     .hero {
-        background-color: #1a2023;
         height: 600px;
-        background-size: cover;
         width: 100vw;
         margin-top: -40px;
     }
@@ -237,6 +235,8 @@ a {
     display: inline;
     font-weight: 300;
     font-size: 20px;
+    padding-left: 1px;
+    padding-right: 1px;
     transition: color 0.3s;
 }
 
@@ -251,6 +251,7 @@ a {
 /*HERO*/
 .hero {
     background-color: #1a2023;
+
     height: 600px;
     background-size: cover;
     width: 100vw;
@@ -277,16 +278,23 @@ a {
 
 
 /*TEXT*/
+.first {
+    background-color: #f4f5eb;
+}
 
 .box {
     font-size: 40px;
-    font-family: "brother-1816", sans-serif;
-    font-weight: 700;
+    background-color: #f4f5eb;
+    font-family: "montserrat";
+    font-weight: 600;
     font-style: normal;
-    color: rgb(150, 153, 150);
+    color: #888b88;
     /* BOX MODEL */
-    margin-top: 130px;
+    padding-top: 150px;
+    padding-bottom: -8px;
     text-align: center;
+    padding-left: 50%;
+    margin-right: 15%;
 }
 
 em {
@@ -295,75 +303,461 @@ em {
 
 
 .stalk {
-    font-family: montserrat;
+    font-family: "montserrat";
     font-size: 20px;
     /* BOX MODEL */
-    margin-left: 200px;
-    margin-right: 200px;
+    padding-left: 50%;
+    padding-top: 2%;
+    margin-right: 15%;
     margin-top: 50px;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
+    line-height: 30px;
+}
+
+.Tree {
+    background-color: #f4f5eb;
+    padding-top: 40px;
+
+    .tree {
+        width: 40%;
+        float: left;
+        margin-left: 9%;
+        margin-right: 30px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+
+    p {
+        font-family: "montserrat";
+        font-size: 20px;
+        margin-right: 250px;
+        margin-left: 250px;
+        padding-top: 20px;
+    }
 }
 
 
-.tree {
-    width: 500px;
-    margin-left: 100px;
-    margin-bottom: 50px;
+.appearance {
+    margin-top: 350px;
+    background-color: #8c8553;
 }
 
+.appearance div {
+    font-family: "montserrat";
+    font-weight: 600;
+    font-size: 40px;
+    margin-left: 250px;
+    padding-top: 40px;
+    color: #f4f5eb;
+}
 
 .variant {
-    background-color: #d4ceb7;
+    background-color: #8c8553;
+    margin-top: -60px;
+    padding-top: 100px;
+
+    img {
+        width: 100vw;
+    }
 }
 
-.va {
-    font-family: montserrat;
-    font-size: 40px;
+.variantimages {
+    display: flex;
+}
+
+.variant p {
+    font-family: "montserrat";
+    font-size: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 100px;
+    color: #f4f5eb;
+    padding-bottom: 15%;
+    padding-top: 5%;
+    line-height: 35px;
+}
+
+.variantimages img {
+    padding-top: 150px;
+    max-width: 65%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.varianttitle {
+    font-family: "montserrat";
     font-weight: 500;
-    color: #1a2023;
-    margin-left: 200px;
-    margin-bottom: 50px;
-    padding-top: 70px;
-    padding-bottom: 500px;
+    font-size: 30px;
+    text-align: center;
+    color: #f4f5eb;
+    padding-top: 12%;
+    padding-bottom: 5%;
+}
+
+
+.appearance p {
+    background-color: #8c8553;
+    color: #f4f5eb;
+    margin-top: -10px;
+    font-family: "montserrat";
+    font-size: 20px;
+    /* BOX MODEL */
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    line-height: 30px;
+}
+
+.appearance img {
+    width: 90%;
+    padding-top: -50px;
+    padding-bottom: 5%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #8c8553;
+    overflow: hidden;
+    aspect-ratio: 25/9;
+    object-fit: cover;
+}
+
+.appearance h2 {
+    font-size: 40px;
+    font-family: "montserrat";
+    font-weight: 600;
+    font-style: normal;
+    color: #f4f5eb;
+    /* BOX MODEL */
+    padding-top: 15%;
+    padding-bottom: 10%;
+    text-align: center;
+}
+
+.snowshoe {
+    margin-top: -10px;
+
+    p {
+        font-family: "montserrat";
+        font-size: 20px;
+        margin-left: 15%;
+        margin-right: 15%;
+        padding-bottom: 100px;
+        margin-top: -30%;
+        line-height: 30px;
+    }
+}
+
+.snowtext {
+    font-size: 40px;
+    font-family: "montserrat";
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    color: #26292d;
+    background-color: #eaeade;
+    padding-top: 15%;
+    padding-bottom: 100px;
+    margin-top: -5%;
+}
+
+
+.gif img {
+    width: 100vw;
+}
+
+.mountain {
+    width: 100vw;
+}
+
+@media screen and (max-width:1250px) {
+
+
+    .stalk {
+        margin-left: 5%;
+        font-size: 20px;
+        float: none;
+        display: block;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .appearance {
+        margin-top: 50px;
+    }
+
+    .Tree {
+
+        .div {
+            display: grid;
+            place-items: center;
+        }
+
+        .tree {
+            float: none;
+            width: 45%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        p {
+            float: none;
+            display: inline-block;
+            vertical-align: bottom;
+            font-size: 18px;
+            margin-left: 250px;
+            margin-right: 250px;
+        }
+    }
+}
+
+.range img {
+    width: 100vw;
+    margin-bottom: -56%;
+}
+
+.rangetext {
+    font-family: "montserrat";
+    color: white;
+    margin-left: 15%;
+
+    h1 {
+        font-size: 60px;
+        font-weight: 600;
+    }
+
+    h2 {
+        font-size: 165%;
+        padding-top: 3%;
+        font-weight: 500;
+    }
+
+    p {
+        margin-right: 50%;
+        font-size: 125%;
+        line-height: 170%;
+
+
+    }
+}
+
+.diet {
+    margin-top: 55%;
+
+    h1 {
+        font-family: "montserrat";
+        margin-left: 10%;
+        font-size: 50px;
+        float: left;
+        line-height: 80px;
+    }
+
+    p {
+        font-family: "montserrat";
+        font-size: 20px;
+        margin-left: 10%;
+        margin-top: 10%;
+        margin-right: 45%;
+        float: left;
+        line-height: 30px;
+    }
+
+    .text {
+        margin-top: 3%;
+    }
+
+    img {
+        float: right;
+        width: 40%;
+        padding-left: 5%;
+
+    }
+}
+
+.behavior {
+
+    h1 {
+        margin-top: 25%;
+        margin-bottom: 1%;
+        font-family: "montserrat";
+        margin-left: 10%;
+        font-size: 400%;
+        float: left;
+        text-align: center;
+    }
+
+    .branch {
+        width: 100vw;
+        padding-top: 10%;
+    }
+
+    p {
+        display: block;
+        margin-top: 10%;
+        margin-left: 15%;
+        margin-right: 15%;
+        font-family: "montserrat";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+
+    }
+
+    .text {
+        margin-top: 5%;
+    }
+}
+
+.tree {
+
+    margin-left: 15%;
+    margin-top: 10%;
+    font-family: "montserrat";
+    font-weight: 600;
+}
+
+.shore {
+    img {
+        float: left;
+        margin-left: 15%;
+        width: 10%;
+        margin-top: 5%;
+    }
+
+    .treext {
+        font-family: "montserrat";
+        margin-top: -45%;
+        margin-left: 35%;
+        float: right;
+
+        h1 {
+            font-size: 200%;
+        }
+
+        p {
+            float: right;
+            line-height: 25px;
+            font-size: 15px;
+            font-size: 100%;
+            margin-right: 45%;
+
+        }
+    }
+
+}
+
+.douglas {
+    margin-top: -5%;
+
+    .text {
+        font-family: "montserrat";
+        margin-top: 75%;
+        margin-left: 15%;
+        margin-right: 45%;
+    }
+
+    p {
+        line-height: 25px;
+        font-size: 15px;
+    }
+}
+
+.douglas {
+    img {
+        float: right;
+        width: 20%;
+        margin-right: 10%;
+        margin-top: -7%;
+        margin-bottom: 15%;
+    }
+}
+
+.nest {
+    width: 45%;
+    margin-top: 7%;
+    float: left;
+    margin-left: 10%;
+
 }
 
 @media screen and (max-width:800px) {
-    .box {
-        font-size: 35px;
-        margin-top: 60px;
-        margin-right: 50px;
-        margin-left: 50px;
+    .mountain {
+        margin-top: 50%;
     }
 
+    .snowshoe p {
+        font-size: 15px;
+        margin-bottom: -50%;
+        padding-top: 7%;
+    }
+
+    .variantimages img {
+        padding-top: 150px;
+        max-width: 65%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-right: 3%;
+        border-left: 3%;
+    }
+
+
+
     .stalk {
-        font-size: 20px;
-        margin-left: 70px;
-        margin-right: 70px;
+        margin-left: 5%;
+        font-size: 18px;
+        float: none;
+        display: block;
+        padding-left: 15%;
+        padding-right: 8%;
     }
 
     .tree {
-        width: 260px;
-        margin-left: 100px;
-        margin-right: 10px;
+        float: none;
+        display: flex;
+        justify-content: center;
+        width: 200px;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .Tree {
+        p {
+            float: none;
+            font-size: 18px;
+            margin-left: 70px;
+            margin-top: 70px;
+            margin-right: 70px;
+        }
+
+        .treet {
+            margin-top: 20px;
+        }
     }
 
     .va {
         font-size: 20px;
         margin-left: 50px;
     }
+
+    .gif {}
 }
 
 @media screen and(max-width:600px) {
-    .stalk {
+
+    .snow {
+        font-size: 12px;
+    }
+
+    .shoe {
         font-size: 10px;
         margin-left: 40px;
         margin-right: 40px;
     }
 
-    .box {
-        font-size: 12px;
-        margin-top: 30px;
-    }
 }
 
 
