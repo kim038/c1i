@@ -358,6 +358,33 @@ em {
     }
 }
 
+.range {
+    margin-bottom: 15%;
+    margin-top: 20%;
+
+    .info {
+        display: inline-flex;
+    }
+
+    .title {
+        font-family: "montserrat";
+        font-weight: 600;
+        font-size: 100px;
+        float: left;
+        margin-left: 10%;
+        color: #888b88;
+    }
+
+    p {
+        float: right;
+        font-family: "montserrat";
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
 @media screen and (max-width:1250px) {
 
 
@@ -371,8 +398,71 @@ em {
     }
 }
 
+.diet {
+    overflow: hidden;
+    margin-top: 35%;
 
+    div {
+        font-family: "montserrat";
+        text-align: center;
+        font-size: 60px;
+        font-weight: 600;
+        margin-bottom: 12%;
+    }
 
+    img {
+        width: 100vw;
+    }
+}
+
+.diettext {
+    background-color: #ebe6d6;
+    margin-top: -1.5%;
+    padding-top: 16%;
+    padding-bottom: 13%;
+
+    p {
+        font-family: "montserrat";
+        font-size: 20px;
+        line-height: 30px;
+        margin-left: 15%;
+        margin-right: 15%;
+
+    }
+}
+
+.life {
+    overflow: hidden;
+    padding-top: 20%;
+    background-color: #adaa89;
+    padding-bottom: 15%;
+
+    img {
+        width: 80vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 13%;
+    }
+
+    div {
+        font-family: "montserrat";
+        font-size: 50px;
+        font-weight: 600;
+        text-align: center;
+        padding-bottom: 5%;
+        color: #f4f5eb;
+    }
+
+    p {
+        font-family: "montserrat";
+        font-size: 20px;
+        margin-left: 15%;
+        margin-right: 15%;
+        line-height: 30px;
+        color: #f4f5eb;
+    }
+}
 
 
 @media screen and (max-width:800px) {
@@ -388,7 +478,25 @@ em {
 
 }
 
+.behavior {
+    overflow: hidden;
+    padding-top: 10%;
 
+    img {
+        float: right;
+        width: 40vw;
+    }
+
+    h1 {
+        float: left;
+        font-family: "montserrat";
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 10%;
+        margin-left: 15%;
+    }
+
+}
 
 /* 
     @media screen and (max-width:600px) {
