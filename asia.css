@@ -288,262 +288,101 @@ em {
 }
 
 
-
-
-
-
-.box {
-    font-size: 40px;
-    background-color: #f4f5eb;
-    font-family: "montserrat";
-    font-weight: 600;
-    font-style: normal;
-    color: #888b88;
-    /* BOX MODEL */
-    padding-top: 150px;
-    padding-bottom: -8px;
-    text-align: center;
-    grid-area: box;
-    grid-row: 1;
-    grid-column: 1;
-}
-
-.one {
-    padding: 30px;
-    display: grid;
-    margin-inline: 0;
-    grid-template-columns: (.5fr 1fr);
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas:
-        "box image"
-        "text image"
-        "text image";
-}
-
-@media(max-width:900px) {
-    .one {
-        display: block;
+@media (max-width:500px) {
+    .wrapper {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, auto);
-        grid-template-areas:
-            "box"
-            "stalk"
-            "first";
-
-        img {
-            width: 60vw;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
-
-
-}
-
-.stalk {
-    font-family: "montserrat";
-    font-size: 20px;
-    /* BOX MODEL */
-    margin-left: 15%;
-    margin-right: 15%;
-    padding-top: 2%;
-    margin-top: 50px;
-    margin-bottom: 100px;
-    line-height: 30px;
-    grid-area: stalk;
-    grid-column: 1/2;
-    grid-row: 2/4;
-}
-
-.first {
-    grid-area: image;
-    grid-column: 2/3;
-    grid-row: 2/4;
-    width: 100%;
-    display: block;
-}
-
-.appearance {
-    margin-top: -30px;
-    background-color: #a29c62;
-
-    h2 {
-        font-family: montserrat;
-        font-size: 40px;
-        padding-top: 200px;
-        text-align: center;
-        color: #f4f5eb;
-    }
-
-    .body {
-        width: 85vw;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 150px;
-
-    }
-
-    p {
-        font-family: "montserrat";
-        font-size: 20px;
-        color: #f4f5eb;
-        margin-right: 15%;
-        margin-left: 15%;
-        line-height: 30px;
-        padding-top: 150px;
-        padding-bottom: 150px;
-    }
-
-    .profile {
-        width: 35vw;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-.range {
-    h2 {
-        font-family: montserrat;
-        font-size: 40px;
-        padding-top: 200px;
-        text-align: center;
-    }
-
-    p {
-        font-family: "montserrat";
-        font-size: 20px;
-        margin-right: 15%;
-        margin-left: 15%;
-        line-height: 30px;
-        padding-top: 150px;
-        padding-bottom: 150px;
-    }
-
-    .tree {
-        width: 40vw;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 200px;
-        padding-top: 150px;
+        grid-template-rows: repeat (3, 1fr);
     }
 
     .map {
-        width: 100vw;
+        grid-row: 1;
+    }
+
+    .button1 {
+        grid-row: 2;
+
+    }
+
+    .button2 {
+        grid-row: 3;
+
+    }
+
+    .button3 {
+        grid-row: 4;
+
     }
 }
 
-.b {
-    padding: 80px;
+.wrapper {
+    margin: -17px;
     display: grid;
     margin-inline: 0;
-    grid-template-columns: (1fr 1fr);
-    grid-template-rows: (.5fr 1fr);
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-rows: repeat(3, auto);
     grid-template-areas:
-        "image title"
-        "image text";
-
-
-    img {
-        grid-area: image;
-        width: 100%;
-        display: block;
-        grid-column: 1;
-        grid-row: 2;
-    }
-
-    h2 {
-        grid-area: title;
-        font-family: montserrat;
-        font-size: 40px;
-        padding-top: 200px;
-        text-align: center;
-    }
-
-    p {
-        grid-area: text;
-        font-family: "montserrat";
-        font-size: 20px;
-        margin-right: 15%;
-        margin-left: 15%;
-        line-height: 30px;
-        padding-top: 150px;
-        padding-bottom: 150px;
-    }
+        "map map"
+        "button1 button2"
+        "button3";
+    width: 100vw;
 }
 
-@media(max-width:970px) {
-    .b {
+@media (max-width:500px) {
+    .wrapper {
         display: block;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, auto);
+        grid-template-rows: repeat(4, auto);
         grid-template-areas:
-            "image"
-            "title"
-            "text";
-
-        img {
-            width: 60vw;
-            margin-left: auto;
-            margin-right: auto;
-            padding-top: 80px;
-        }
+            "map"
+            "button1"
+            "button2"
+            "button3";
     }
 }
 
-.variant {
-    background-color: coral;
+.map {
+    grid-area: map;
 
-    h2 {
-        grid-area: title;
-        font-family: montserrat;
-        font-size: 40px;
-        padding-top: 200px;
-        text-align: center;
-        color: #f4f5eb;
-    }
+    grid-column: span 2;
+    grid-row: 1;
 
-    p {
-        font-family: "montserrat";
-        font-size: 20px;
-        margin-right: 15%;
-        margin-left: 15%;
-        line-height: 30px;
-        padding-top: 150px;
-        padding-bottom: 150px;
-        color: #f4f5eb;
-    }
-
-    .v1 {
-        padding-left: 60px;
-        width: 30vw;
-
-    }
-
-    .v2 {
-        padding-right: 40px;
-        width: 45vw;
-        padding-left: 150px;
-
-
+    img {
+        width: 100%;
     }
 }
 
-@media(max-width:1200px) {
-    .v1 {
+.button1 {
+    margin-top: -5px;
+    grid-area: button1;
+    grid-column: 1/2;
+    grid-row: 2;
+
+    img {
+        width: 100%;
         display: block;
-        margin-right: auto;
-        margin-left: auto;
     }
 
-    .v2 {
+}
 
+.button2 {
+    margin-top: -5px;
+    grid-area: button3;
+    grid-column: 2/3;
+    grid-row: 2;
+
+    img {
+        width: 100%;
         display: block;
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: 15%;
-        margin-bottom: 10%;
+    }
+}
+
+.button3 {
+    grid-area: button3;
+    grid-column: 1/2;
+    grid-row: 3;
+
+    img {
+        width: 100%;
+        display: block;
     }
 }
