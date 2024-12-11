@@ -10,3 +10,19 @@ button1.addEventListener('mouseover', () => {
 button2.addEventListener('mouseover', () => {
     map.src = 'Maps/beech.jpg';
 })
+
+let hamburger = document.querySelector(".hamburger");
+let sidebar = document.getElementById("sidebar");
+let close = document.querySelector(".close");
+
+close.addEventListener("click", function () {
+    sidebar.style.display = "none";
+    console.log("clicked");
+
+})
+
+hamburger.addEventListener("click", function () {
+    sidebar.style.display = "block";
+    console.log("clicked");
+
+})

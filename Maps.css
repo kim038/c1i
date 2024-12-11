@@ -13,6 +13,7 @@ body {
 .sidebar {
     font-family: montserrat;
     font-weight: 600;
+    padding-top: 50px;
     right: 0%;
     padding-right: 20vw;
     margin-left: auto;
