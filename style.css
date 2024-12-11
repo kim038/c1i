@@ -694,6 +694,7 @@ em {
 
 .map {
     width: 100vw;
+    margin-top: -5px;
 }
 
 .habitat {
