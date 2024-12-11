@@ -11,6 +11,14 @@
 </head>
 
 <body>
+    <div id="sidebar" class="sidebar">
+        <div class="close">X</div>
+        <li><a href="https://kim038.github.io/c1i/">Home</a></li>
+        <li><a href="https://kim038.github.io/c1i/NorthAmerica.html">Explore</a></li>
+        <li><a href="#">About</a></li>
+
+
+    </div>
     <header>
         <img class="logo" src="Images/Web.png" alt="logo">
         <nav class="navbar">
@@ -72,19 +80,32 @@
             settling in more open landscapes, such as cliffs and fields. </p>
     </div>
 
+    <div class="icons">
+        <img class="hhouse" src=" Icons/hhouse.png">
+        <img class="hleaf" src="Icons/hleaf.png">
+        <img class="hhill" src="Icons/hhill.png">
+    </div>
+
     <div class="diet">
         <h2>Diet</h2>
         <p>Beech Martens, like other marten species, are omnivores, however, their diet contains a higher percentage of
             plants. Much of their diet has a diverse array of plants, such as blaeberries, wild tomatoes, and mountain
             ash. During the winter months when plants become more rare, Beech Martens do focus more on hunting, but
-            because of their bolder nature, sometimes wander onto urban landscapes and target domestic animals.</p>
-        <img src="BeechImages/Beechdiet.png">
-        <p class="bottom">While this isn't part of their diet, Beech Martens, due to being strangely confident around
+            because of their bolder nature, sometimes wander onto urban landscapes and target domestic animals. While
+            this isn't part of their diet, Beech Martens, due to being strangely confident around
             human structures,
             can be found settling in and chewing on cable wires for cars, becoming quite a nuisance for vehicle owners.
         </p>
+
     </div>
 
+    <div class="dietgrid">
+        <img class="rowan" src="Icons/preyrowan.png">
+        <img class="moss" src="Icons/preymoss.png">
+        <img class="berry" src="Icons/preyberry.png">
+        <img class="tomato" src="Icons/preytomatoe.png">
+        <img class="wasp" src="Icons/preywasp.png">
+    </div>
 
     <div class="gif">
         <h2>Crawl and Prowl</h2>
@@ -97,7 +118,24 @@
         <img src="BeechImages/crawl.gif"></img>
     </div>
 
+    <script>
+        let hamburger = document.querySelector(".hamburger");
+        let sidebar = document.getElementById("sidebar");
+        let close = document.querySelector(".close");
 
+        close.addEventListener("click", function () {
+            sidebar.style.display = "none";
+            console.log("clicked");
+
+        });
+
+        hamburger.addEventListener("click", function () {
+            sidebar.style.display = "block";
+            console.log("clicked");
+
+        });
+
+    </script>
 
 </body>
 

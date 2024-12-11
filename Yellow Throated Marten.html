@@ -11,6 +11,14 @@
 </head>
 
 <body>
+    <div id="sidebar" class="sidebar">
+        <div class="close">X</div>
+        <li><a href="https://kim038.github.io/c1i/">Home</a></li>
+        <li><a href="https://kim038.github.io/c1i/NorthAmerica.html">Explore</a></li>
+        <li><a href="#">About</a></li>
+
+
+    </div>
     <header>
         <img class="logo" src="Images/Web.png" alt="logo">
         <nav class="navbar">
@@ -69,12 +77,26 @@
             tough, widthstanding the extreme temperatures of higher elevations and the coniferous forests.</p>
     </div>
 
+    <div class="icons">
+        <img class="hhouse" src=" Icons/hhouse.png">
+        <img class="hleaf" src="Icons/hleaf.png">
+        <img class="hwater" src="Icons/hwater.png">
+    </div>
+
     <div class="diet">
         <p>The Yellow Throated Marten is known to be very fierce, hunting larger prey, such as deer, pheasants, monkeys,
             and even the elusive red pandas if given the chance. However, due to the opportunistic nature of martens,
             the Yellow-Throated Marten is also known for eating plants and plant-based foods, such as nectar.</p>
-        <img src="YellowImages/Yellowdiet.png">
+
     </div>
+    <div class="dietgrid">
+        <img class="wasp" src="Icons/preywasp.png">
+        <img class="flower" src="Icons/preyflower.png">
+        <img class="bone" src="Icons/preybird.png">
+        <img class="fish" src="Icons/preyfish.png">
+    </div>
+
+    <img class="nectar" src="YellowImages/Yellowdiet.png">
 
     <div class="behavior">
         <h2>The Fearless Weasel</h2>
@@ -88,6 +110,26 @@
             <img src="YellowImages/Yellowswim.png">
         </div>
     </div>
+
+
+    <script>
+        let hamburger = document.querySelector(".hamburger");
+        let sidebar = document.getElementById("sidebar");
+        let close = document.querySelector(".close");
+
+        close.addEventListener("click", function () {
+            sidebar.style.display = "none";
+            console.log("clicked");
+
+        });
+
+        hamburger.addEventListener("click", function () {
+            sidebar.style.display = "block";
+            console.log("clicked");
+
+        });
+
+    </script>
 
 </body>
 
