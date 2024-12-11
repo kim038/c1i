@@ -11,6 +11,14 @@
 </head>
 
 <body>
+    <div id="sidebar" class="sidebar">
+        <div class="close">X</div>
+        <li><a href="https://kim038.github.io/c1i/">Home</a></li>
+        <li><a href="https://kim038.github.io/c1i/NorthAmerica.html">Explore</a></li>
+        <li><a href="#">About</a></li>
+
+
+    </div>
     <header>
         <img class="logo" src="Images/Web.png" alt="logo">
         <nav class="navbar">
@@ -74,6 +82,14 @@
         <img class="tree" src="JapanImages/jtree.png">
         <img class="map" src="Maps/japanese.jpg">
     </div>
+
+    <div class="icons">
+        <img class="hsnow" src=" Icons/hsnow.png">
+        <img class="hleaf" src="Icons/hleaf.png">
+        <img class="hhill" src="Icons/hhill.png">
+    </div>
+
+
     <div class="b">
         <img src="JapanImages/stand.png">
         <h2>Friend or Foe</h2>
@@ -81,6 +97,13 @@
             ecology as pest control, preying on small mammals that may damage plants that litter the forest floors of
             Japan. However, despite this incredibly important role, the Japanese Marten has made a few enemies from its
             scavenging, feeding on animals beneficial to human activity, such as agriculture. </p>
+    </div>
+
+    <div class="dietgrid">
+        <img class="ant" src="Icons/preyant.png">
+        <img class="bird" src="Icons/preybird.png">
+        <img class="berry" src="Icons/preyberry.png">
+        <img class="wasp" src="Icons/preywasp.png">
     </div>
     <div class="variant">
         <h2>Variants</h2>
@@ -92,6 +115,25 @@
         <img class="v1" src="JapanImages/v1.png">
         <img class="v2" src="JapanImages/v2.png">
     </div>
+
+    <script>
+        let hamburger = document.querySelector(".hamburger");
+        let sidebar = document.getElementById("sidebar");
+        let close = document.querySelector(".close");
+
+        close.addEventListener("click", function () {
+            sidebar.style.display = "none";
+            console.log("clicked");
+
+        });
+
+        hamburger.addEventListener("click", function () {
+            sidebar.style.display = "block";
+            console.log("clicked");
+
+        });
+
+    </script>
 </body>
 
 </html>
