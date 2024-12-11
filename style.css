@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url("https://use.typekit.net/hxw4avg.css");
 
-
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     background-color: #f4f5eb;
@@ -10,6 +13,46 @@ body {
     display: grid;
     margin: 0;
     padding: 0;
+}
+
+
+.sidebar {
+    font-family: montserrat;
+    font-weight: 600;
+    right: 0%;
+    padding-right: 20vw;
+    margin-left: auto;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    height: 100vh;
+    z-index: 2;
+
+    display: none;
+    width: 100vw;
+    text-align: center;
+    padding-right: 10vw;
+
+    li,
+    a {
+        list-style-type: none;
+        font-size: 20px;
+        padding-left: 40px;
+        padding-top: 100px;
+    }
+}
+
+
+
+.close {
+    font-size: 25px;
+    font-weight: 450;
+    right: 0%;
+    margin-left: auto;
+    margin: 30px;
+    font-family: montserrat;
+    position: fixed;
+    text-align: center;
+    color: salmon;
 }
 
 /*TOP NAV*/
@@ -25,7 +68,7 @@ header {
     padding: 30 px 10%;
     background: white;
     margin-bottom: 0;
-    z-index: 1000;
+    z-index: 1;
 }
 
 .hamburger-checkbox {
@@ -125,6 +168,7 @@ header {
         height: 600px;
         width: 100vw;
         margin-top: -40px;
+        background-color: #1a2023;
     }
 
     .container {
@@ -144,6 +188,7 @@ header {
         font-weight: 500;
         padding-top: 40px;
     }
+
 
 
     /*TEXT*/
@@ -181,10 +226,37 @@ header {
         font-weight: 500;
         color: rgb(150, 153, 150);
         /* BOX MODEL */
-    margin-top: 100px;
-    text-align: center;
+    /* margin-top: 100px;
+    text-align: center;*/
 }
 
+/*HERO*/
+.hero {
+    background-color: #1a2023;
+
+    height: 600px;
+    background-size: cover;
+    width: 100vw;
+    margin-top: -40px;
+}
+
+.container {
+    text-align: center;
+    padding-top: 60px;
+}
+
+.container h2 {
+    font-family: montserrat;
+    font-weight: 200;
+    color: white;
+}
+
+.container h1 {
+    font-family: Montserrat;
+    color: white;
+    font-weight: 500;
+    padding-top: 40px;
+}
 
 .stalk {
     font-family: poppins;
@@ -245,7 +317,6 @@ a {
     list-style-type: none;
     background-color: #26292d;
     padding-top: 80px;
-    /*  width: 100vw; */
     height: 130px;
     text-align: center;
     justify-content: space-evenly;
@@ -280,12 +351,13 @@ a {
 
 /*HERO*/
 .hero {
-    background-color: #1a2023;
+    overflow: hidden;
+    margin-top: -18px;
 
-    height: 600px;
-    background-size: cover;
-    width: 100vw;
-    margin-top: -40px;
+    img {
+        width: 100vw;
+        margin-top: -40px;
+    }
 }
 
 .container {
@@ -336,7 +408,7 @@ em {
     font-family: "montserrat";
     font-size: 20px;
     /* BOX MODEL */
-    padding-left: 50%;
+    padding-left: 40%;
     padding-top: 2%;
     margin-right: 15%;
     margin-top: 50px;
@@ -349,12 +421,13 @@ em {
     padding-top: 40px;
 
     .tree {
-        width: 40%;
+        width: 30%;
         float: left;
         margin-left: 9%;
         margin-right: 30px;
         margin-bottom: 20px;
         margin-top: 10px;
+        display: block;
     }
 
 
@@ -364,9 +437,16 @@ em {
         margin-right: 250px;
         margin-left: 250px;
         padding-top: 20px;
+        display: block;
+        float: right;
     }
 }
 
+@media (max-width:600px) {
+    .Tree {
+        padding-top: 10px;
+    }
+}
 
 .appearance {
     margin-top: 350px;
@@ -499,7 +579,7 @@ em {
 
 .range {
     overflow: hidden;
-    background-color: #212223;
+
 
     .text {
         margin-top: 2%;
@@ -507,37 +587,121 @@ em {
 
     h1 {
         font-family: "montserrat";
-        font-size: 50px;
-        font-weight: 700;
+        font-size: 40px;
+        font-weight: 600;
         padding-top: 25%;
-        color: #d4dcd9;
+        color: #1a2023;
         text-align: center;
     }
 
-    h2 {
-        font-family: "montserrat";
-        text-align: center;
-        font-weight: 600;
-        font-size: 30px;
-        color: #d4dcd9;
+    .icons {
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 500px;
+        grid-template-areas: 'hforest hmountain hsnow'
+    }
+
+
+    .hforest {
+        width: 20vw;
+        grid-area: hforest;
+        display: block;
+        margin-left: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: auto;
+        grid-column: 1/2;
+    }
+
+    .hmountain {
+        width: 20vw;
+        grid-area: hmountain;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        grid-column: 2/3;
+    }
+
+    .hsnow {
+        width: 20vw;
+        grid-area: hsnow;
+        display: block;
+        margin-left: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: auto;
+        grid-column: 3/4;
     }
 }
 
+@media (max-width:700px) {
+    .range {
+        .icons {
+            grid-template-columns: 1fr;
+            grid-template-rows: 300px 300px 300px;
+            grid-template-areas:
+                'hforest'
+                'hmountain'
+                'hsnow';
+        }
+
+        .hforest {
+            grid-row: 1/2;
+            display: block;
+            margin-left: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-right: auto;
+            grid-column: 1;
+            width: 40vw;
+
+        }
+
+        .hmountain {
+            grid-row: 2/3;
+            grid-column: 1;
+            width: 40vw;
+
+        }
+
+        .hsnow {
+            grid-row: 3/4;
+            grid-column: 1;
+            width: 40vw;
+
+        }
+
+        .mountain {
+            width: 200vw;
+            display: block;
+            margin-left: -300px;
+            padding-top: 100px;
+        }
+    }
+}
+
+
+
+.mountain {
+    width: 100vw;
+    padding-top: 300px;
+
+
+}
 
 .habitat {
     font-family: "montserrat";
     font-size: 20px;
-    margin-left: 10%;
-    margin-right: 55%;
-    padding-top: 4%;
-    color: #d4dcd9;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 5%;
+    color: #1a2023;
 }
 
-.mountain {
-    width: 50vw;
-    margin-top: -5%;
-    float: right;
-}
+
 
 @media screen and (max-width:1250px) {
 
@@ -585,51 +749,84 @@ em {
 
 .color {
     overflow: hidden;
-    background-color: rgb(246, 212, 153);
     padding-top: 20%;
 }
 
 .diet {
+    background-color: rgb(255, 145, 90);
 
     h1 {
         font-family: "montserrat";
-        margin-left: 10%;
         font-size: 50px;
-        float: left;
+        text-align: center;
         line-height: 80px;
-        color: rgb(72, 70, 70);
-    }
-
-    img {
-        margin-top: 4%;
-        float: right;
-        width: 50%;
-        padding-left: 5%;
-    }
-
-    hr {
-        margin-top: 15%;
-        margin-left: 15%;
-        margin-right: 50%;
-        border: 2px solid #d1d1c7;
-
-
+        color: #f4f5eb;
     }
 
     p {
         font-family: "montserrat";
         font-size: 20px;
-        line-height: 30px;
         margin-left: 15%;
-        margin-right: 50%;
+        margin-right: 15%;
         margin-top: 5%;
         margin-bottom: 10%;
-
+        color: #f4f5eb;
     }
 }
 
+.dietgrid {
+    display: grid;
+    margin-bottom: 240px;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: max-content;
+    grid-template-areas:
+        'bird moss bone'
+        'wasp wasp cone';
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+}
+
+.bird {
+    grid-area: bird;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    object-fit: contain;
+}
+
+.moss {
+    grid-area: moss;
+}
+
+.bone {
+    grid-area: bone;
+}
+
+.wasp {
+    grid-area: wasp;
+    column-span: 2;
+    grid-column: 1/3;
+    grid-row: 2;
+}
+
+.cone {
+    grid-area: cone;
+    grid-column: 3/4;
+}
+
+
+
 .behavior {
-    margin-top: 20%;
+    margin-top: 15%;
+    background-color: #f4f5eb;
 
     h1 {
         font-family: "montserrat";
@@ -654,70 +851,20 @@ em {
     }
 }
 
-.shore {
-    margin-top: 20%;
-    overflow: hidden;
 
-    p {
-        font-family: "montserrat";
-        padding-top: 5%;
-        padding-left: 30%;
-        margin-right: 30%;
-        line-height: 30px;
-    }
 
-    img {
-        float: left;
-        width: 10vw;
-        margin-left: 10%;
-    }
+
+
+.nest {
+    width: 70vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
 
 }
 
-.douglas {
-    margin-top: 20%;
-    overflow: hidden;
-
-    p {
-        font-family: "montserrat";
-        padding-top: 5%;
-        margin-left: 15%;
-        padding-right: 40%;
-        line-height: 30px;
-    }
-
-    img {
-        float: right;
-        width: 18vw;
-        margin-right: 10%;
-    }
-}
-
-.final {
-    background-color: #8c8553;
-
-    p {
-        font-family: "montserrat";
-        font-size: 20px;
-        margin-left: 15%;
-        margin-right: 15%;
-        margin-top: 15%;
-        padding-top: 15%;
-        color: #f4f5eb;
-        line-height: 30px;
-
-    }
-
-    img {
-        width: 70vw;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 10%;
-        padding-bottom: 10%;
-
-    }
-}
 
 @media screen and (max-width:800px) {
     .mountain {
@@ -784,7 +931,6 @@ em {
             float: none;
             font-size: 18px;
             margin-left: 70px;
-            margin-top: 70px;
             margin-right: 70px;
         }
 
@@ -798,7 +944,6 @@ em {
         margin-left: 50px;
     }
 
-    .gif {}
 }
 
 @media screen and(max-width:600px) {

@@ -11,7 +11,17 @@
 </head>
 
 <body>
+  <div id="sidebar" class="sidebar">
+    <div class="close">X</div>
+    <li><a href="https://kim038.github.io/c1i/">Home</a></li>
+    <li><a href="https://kim038.github.io/c1i/NorthAmerica.html">Explore</a></li>
+    <li><a href="#">About</a></li>
+
+  </div>
   <header>
+
+
+
     <img class="logo" src="Images/Web.png" alt="logo">
     <nav class="navbar">
       <input type="checkbox" id="hamburger-checkbox" class="hamburger-checkbox" />
@@ -25,6 +35,27 @@
   </header>
   <p class="title">NATURE'S<br>TREE<br>ASSASSINS</p>
 
+
+
+
+  <script>
+    let hamburger = document.querySelector(".hamburger");
+    let sidebar = document.getElementById("sidebar");
+    let close = document.querySelector(".close");
+
+    close.addEventListener("click", function () {
+      sidebar.style.display = "none";
+      console.log("clicked");
+
+    });
+
+    hamburger.addEventListener("click", function () {
+      sidebar.style.display = "block";
+      console.log("clicked");
+
+    });
+
+  </script>
 
 </body>
 
