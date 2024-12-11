@@ -355,6 +355,12 @@ em {
     margin-left: 15%;
 }
 
+.swim {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+}
 
 .appearance {
     overflow: hidden;
@@ -379,7 +385,7 @@ em {
 
     }
 
-    p {
+    .top {
         font-family: "montserrat";
         font-size: 20px;
         color: #f4f5eb;
@@ -387,6 +393,17 @@ em {
         margin-left: 15%;
         line-height: 30px;
         padding-top: 3%;
+    }
+
+    .bottom {
+        font-family: "montserrat";
+        font-size: 20px;
+        color: #f4f5eb;
+        margin-right: 15%;
+        margin-left: 15%;
+        line-height: 30px;
+        padding-top: -60px;
+        padding-bottom: 150px;
     }
 
     .face {
@@ -403,28 +420,140 @@ em {
     margin-bottom: 15%;
     margin-top: 20%;
 
-    .info {
-        display: inline-flex;
-    }
+
 
     .title {
         font-family: "montserrat";
         font-weight: 600;
         font-size: 100px;
-        float: left;
-        margin-left: 10%;
+        margin-left: 15%;
+        margin-bottom: 100px;
         color: #888b88;
     }
 
     p {
-        float: right;
+
         font-family: "montserrat";
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 15%;
+        margin-right: 15%;
         font-size: 20px;
         line-height: 30px;
     }
 }
+
+.tree {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    width: 30vw;
+}
+
+@media(max-width:700px) {
+    .range {
+        .title {
+            font-size: 60px;
+            text-align: center;
+            margin: auto;
+            padding-bottom: 60px;
+            padding-top: 60px;
+        }
+
+    }
+
+    .tree {
+        width: 70vw;
+        padding-top: 80px;
+    }
+
+}
+
+
+
+.icons {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 500px;
+    grid-template-areas: 'hmountain hwater hforest'
+}
+
+
+.hmountain {
+    width: 20vw;
+    grid-area: hmountain;
+    display: block;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    grid-column: 1/2;
+}
+
+.hwater {
+    width: 20vw;
+    grid-area: hwater;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    grid-column: 2/3;
+}
+
+.hforest {
+    width: 20vw;
+    grid-area: hforest;
+    display: block;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    grid-column: 3/4;
+}
+
+
+@media (max-width:700px) {
+
+    .icons {
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 300px 300px;
+        grid-template-areas:
+            'hmountain'
+            'hwater'
+            'hforest';
+    }
+
+    .hmountain {
+        grid-row: 1/2;
+        display: block;
+        margin-left: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: auto;
+        grid-column: 1;
+        width: 40vw;
+
+    }
+
+    .hwater {
+        grid-row: 2/3;
+        grid-column: 1;
+        width: 40vw;
+
+    }
+
+    .hforest {
+        grid-row: 3/4;
+        grid-column: 1;
+        width: 40vw;
+
+    }
+}
+
+
+
+
 
 @media screen and (max-width:1250px) {
 
@@ -448,7 +577,7 @@ em {
         text-align: center;
         font-size: 60px;
         font-weight: 600;
-        margin-bottom: 12%;
+
     }
 
     img {
@@ -472,18 +601,71 @@ em {
     }
 }
 
-.life {
-    overflow: hidden;
-    padding-top: 20%;
-    background-color: #adaa89;
-    padding-bottom: 15%;
+.dietgrid {
+    display: grid;
+    margin-bottom: 20px;
+    width: 100vw;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: max-content;
+    grid-template-areas:
+        'berry fish fish'
+        'lichen egg  bird';
 
     img {
-        width: 80vw;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+}
+
+.bird {
+    grid-area: bird;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    object-fit: contain;
+}
+
+.lichen {
+    grid-area: lichen;
+}
+
+.fish {
+    grid-area: fish;
+}
+
+.berry {
+    grid-area: berry;
+
+}
+
+.egg {
+    grid-area: egg;
+
+}
+
+.fishing {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40vw;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+
+.life {
+    overflow: hidden;
+    margin-top: 80px;
+
+
+    img {
+        width: 100vw;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        padding-bottom: 13%;
     }
 
     div {
@@ -491,8 +673,9 @@ em {
         font-size: 50px;
         font-weight: 600;
         text-align: center;
-        padding-bottom: 5%;
-        color: #f4f5eb;
+        padding-bottom: 50px;
+        padding-top: 20px;
+        color: #1a2023;
     }
 
     p {
@@ -500,11 +683,17 @@ em {
         font-size: 20px;
         margin-left: 15%;
         margin-right: 15%;
+        padding-bottom: 30px;
         line-height: 30px;
-        color: #f4f5eb;
+        color: #1a2023;
     }
 }
 
+@media (max-width:400px) {
+    .life {
+        margin-top: 30px;
+    }
+}
 
 @media screen and (max-width:800px) {
 
@@ -519,25 +708,7 @@ em {
 
 }
 
-.behavior {
-    overflow: hidden;
-    padding-top: 10%;
 
-    img {
-        float: right;
-        width: 40vw;
-    }
-
-    h1 {
-        float: left;
-        font-family: "montserrat";
-        font-size: 20px;
-        font-weight: 500;
-        margin-top: 10%;
-        margin-left: 15%;
-    }
-
-}
 
 /* 
     @media screen and (max-width:600px) {
