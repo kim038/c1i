@@ -445,6 +445,12 @@ em {
     }
 }
 
+
+.map {
+    width: 100vw;
+    margin-top: -5px;
+}
+
 .icons {
     padding-top: 150px;
     padding-bottom: 150px;

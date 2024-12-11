@@ -692,6 +692,10 @@ em {
 
 }
 
+.map {
+    width: 100vw;
+}
+
 .habitat {
     font-family: "montserrat";
     font-size: 20px;

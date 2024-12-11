@@ -407,6 +407,10 @@ em {
     }
 }
 
+.map {
+    width: 100vw;
+}
+
 .icons {
     overflow: hidden;
     padding-top: 100px;
