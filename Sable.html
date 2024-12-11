@@ -11,6 +11,15 @@
 </head>
 
 <body>
+
+    <div id="sidebar" class="sidebar">
+        <div class="close">X</div>
+        <li><a href="https://kim038.github.io/c1i/">Home</a></li>
+        <li><a href="https://kim038.github.io/c1i/NorthAmerica.html">Explore</a></li>
+        <li><a href="#">About</a></li>
+
+
+    </div>
     <header>
         <img class="logo" src="Images/Web.png" alt="logo">
         <nav class="navbar">
@@ -69,6 +78,13 @@
             However, due to domestication, that doesn't exactly make them rare in population.</p>
     </div>
 
+
+    <div class="icons">
+        <img class="hmountain" src=" Icons/hmountain.png">
+        <img class="hsnow" src="Icons/hsnow.png">
+        <img class="hhill" src="Icons/hhill.png">
+    </div>
+
     <div class="variant">
         <h2>Domestication</h2>
         <img src="SableImages/Sablevariant.png">
@@ -79,6 +95,14 @@
             stop there. Demand and human curiosity has led to more patterns and colors, such as tuxedo. Interestingly,
             the Sable is treated like a cat or a dog, in a sense that their genetics are easily manipulated by humans
             and brought up as pets. </p>
+    </div>
+
+    <div class="dietgrid">
+        <img class="rowan" src="Icons/preyrowan.png">
+        <img class="berry" src="Icons/preyberry.png">
+        <img class="bird" src="Icons/preybird.png">
+        <img class="lichen" src="Icons/preylichen.png">
+        <img class="fish" src="Icons/preyfish.png">
     </div>
 
     <div class="fur">
@@ -92,6 +116,27 @@
         <img src="SableImages/Sablefur.png">
     </div>
 
+
+
+
+    <script>
+        let hamburger = document.querySelector(".hamburger");
+        let sidebar = document.getElementById("sidebar");
+        let close = document.querySelector(".close");
+
+        close.addEventListener("click", function () {
+            sidebar.style.display = "none";
+            console.log("clicked");
+
+        });
+
+        hamburger.addEventListener("click", function () {
+            sidebar.style.display = "block";
+            console.log("clicked");
+
+        });
+
+    </script>
 </body>
 
 </html>

@@ -9,6 +9,46 @@ body {
     padding: 0;
 }
 
+.sidebar {
+    font-family: montserrat;
+    font-weight: 600;
+    right: 0%;
+    padding-right: 20vw;
+    margin-left: auto;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    height: 100vh;
+    z-index: 2;
+    margin-top: -60px;
+    display: none;
+    width: 100vw;
+    text-align: center;
+    padding-right: 10vw;
+
+    li,
+    a {
+        list-style-type: none;
+        font-size: 20px;
+        padding-left: 40px;
+        padding-top: 100px;
+    }
+}
+
+
+
+.close {
+    font-size: 25px;
+    font-weight: 450;
+    right: 0%;
+    margin-left: auto;
+    margin: 30px;
+    font-family: montserrat;
+    position: fixed;
+    text-align: center;
+    color: salmon;
+}
+
+
 /*TOP NAV*/
 header {
     display: flex;
@@ -22,7 +62,7 @@ header {
     padding: 30 px 10%;
     background: white;
     margin-bottom: 0;
-    z-index: 1000;
+    z-index: 1;
 }
 
 .hamburger-checkbox {
@@ -384,6 +424,88 @@ em {
     }
 }
 
+
+.icons {
+    overflow: hidden;
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 500px;
+    grid-template-areas: 'hmountain hsnow hhill'
+}
+
+
+.hmountain {
+    width: 20vw;
+    grid-area: hmountain;
+    display: block;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    grid-column: 1/2;
+}
+
+.hsnow {
+    width: 20vw;
+    grid-area: hsnow;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    grid-column: 2/3;
+}
+
+.hhill {
+    width: 20vw;
+    grid-area: hhill;
+    display: block;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    grid-column: 3/4;
+}
+
+@media (max-width:700px) {
+
+    .icons {
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 300px 300px;
+        grid-template-areas:
+            'hmountain'
+            'hsnow'
+            'hhill';
+    }
+
+    .hmountain {
+        grid-row: 1/2;
+        display: block;
+        margin-left: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: auto;
+        grid-column: 1;
+        width: 40vw;
+
+    }
+
+    .hsnow {
+        grid-row: 2/3;
+        grid-column: 1;
+        width: 40vw;
+
+    }
+
+    .hhill {
+        grid-row: 3/4;
+        grid-column: 1;
+        width: 40vw;
+
+    }
+}
+
 .variant {
     h2 {
         font-size: 40px;
@@ -412,6 +534,52 @@ em {
         padding-top: 150px;
         padding-bottom: 150px;
     }
+}
+
+
+.dietgrid {
+    display: grid;
+    margin-bottom: 20px;
+    width: 100vw;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: max-content;
+    grid-template-areas:
+        'rowan berry bird'
+        'fish fish lichen';
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+}
+
+.rowan {
+    grid-area: rowan;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    object-fit: contain;
+}
+
+.berry {
+    grid-area: berry;
+}
+
+.bird {
+    grid-area: bird;
+}
+
+.fish {
+    grid-area: fish;
+
+}
+
+.lichen {
+    grid-area: lichen;
+
 }
 
 .fur {
