@@ -11,6 +11,13 @@
 </head>
 
 <body>
+    <div id="sidebar" class="sidebar">
+        <div class="close">X</div>
+        <li><a href="https://kim038.github.io/c1i/">Home</a></li>
+        <li><a href="https://kim038.github.io/c1i/NorthAmerica.html">Explore</a></li>
+        <li><a href="#">About</a></li>
+
+    </div>
     <header>
         <img class="logo" src="Images/Web.png" alt="logo">
         <nav class="navbar">
@@ -43,7 +50,8 @@
 
     <div class="box">The Default Marten</div>
     <div class="first">
-        <p class="stalk"> <img src="PineImages/Pinehabitat.png"></img>The European Pine Marten<em> (Martes Martes)</em>,
+        <img src="PineImages/Pinehabitat.png"></img>
+        <p class="stalk">The European Pine Marten<em> (Martes Martes)</em>,
             or just Pine Marten, is the most well
             known
             and widespread marten species. Described as cunning and agile, the European Pine Marten has quickly become a
@@ -79,6 +87,15 @@
     </div>
     </div>
 
+    <div class="icons">
+        <img class="hforest" src=" Icons/hforest.png">
+        <img class="hleaf" src="Icons/hleaf.png">
+        <img class="hhill" src="Icons/hhill.png">
+    </div>
+
+
+
+
     <div class="diet">
         <h2>Ecology Savior</h2>
         <p class="top">While classified as a carnivore, the European Pine Marten is known for including plants, such as
@@ -95,7 +112,38 @@
             target for the Pine Marten due to its inexperience, allowing Red Squirrels to recover their populations and
             lose their competition.</p>
     </div>
+
+    <div class="dietgrid">
+        <img class="ant" src="Icons/preyant.png">
+        <img class="bone" src="Icons/preybone.png">
+        <img class="egg" src="Icons/preyegg.png">
+        <img class="bird" src="Icons/preybird.png">
+        <img class="moss" src="Icons/preymoss.png">
+    </div>
+
+
+
     <img class="chase" src="PineImages/Pinediet.png"></img>
+
+    <script>
+        let hamburger = document.querySelector(".hamburger");
+        let sidebar = document.getElementById("sidebar");
+        let close = document.querySelector(".close");
+
+        close.addEventListener("click", function () {
+            sidebar.style.display = "none";
+            console.log("clicked");
+
+        });
+
+        hamburger.addEventListener("click", function () {
+            sidebar.style.display = "block";
+            console.log("clicked");
+
+        });
+
+    </script>
+
 
 </body>
 
