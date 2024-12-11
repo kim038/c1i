@@ -10,6 +10,45 @@ body {
     padding: 0;
 }
 
+.sidebar {
+    font-family: montserrat;
+    font-weight: 600;
+    right: 0%;
+    padding-right: 20vw;
+    margin-left: auto;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    height: 100vh;
+    z-index: 2;
+    margin-top: -60px;
+    display: none;
+    width: 100vw;
+    text-align: center;
+    padding-right: 10vw;
+
+    li,
+    a {
+        list-style-type: none;
+        font-size: 20px;
+        padding-left: 40px;
+        padding-top: 100px;
+    }
+}
+
+
+
+.close {
+    font-size: 25px;
+    font-weight: 450;
+    right: 0%;
+    margin-left: auto;
+    margin: 30px;
+    font-family: montserrat;
+    position: fixed;
+    text-align: center;
+    color: salmon;
+}
+
 /*TOP NAV*/
 header {
     display: flex;
@@ -23,7 +62,7 @@ header {
     padding: 30 px 10%;
     background: white;
     margin-bottom: 0;
-    z-index: 1000;
+    z-index: 1;
 }
 
 .hamburger-checkbox {
